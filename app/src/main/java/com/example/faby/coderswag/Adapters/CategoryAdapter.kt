@@ -25,7 +25,7 @@ class CategoryAdapter(context: Context, categories: List<Category>)  : BaseAdapt
 
             holder.categoryImage = categoryView.findViewById(R.id.categoryImage)
             holder.categoryName = categoryView.findViewById(R.id.categoryName)
-            
+
 
             categoryView.tag = holder
 
