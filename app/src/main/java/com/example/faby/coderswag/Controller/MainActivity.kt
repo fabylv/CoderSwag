@@ -22,7 +22,7 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        adapter = CategoryRecycleAdapter(this, DataService.categories) {category ->
+        adapter = CategoryRecycleAdapter(this, DataService.categories) { category ->
             val productIntent = Intent(this, ProductsActivity::class.java)
             productIntent.putExtra(EXTRA_CATEGORY, category.title)
             startActivity(productIntent)
